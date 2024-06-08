@@ -1,0 +1,190 @@
+/* Styling the body element */
+.body {
+    background: linear-gradient(135deg, #354f52, #5c939a); /* Teal gradient background */
+    background-size: 400% 400%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Header class styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+  
+.logout-button {
+    background-color: #5c939a; /* Dark teal color for buttons */
+    color: #ffffff; /* White text */
+    margin-right: 80px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #873f3f; /* Darker teal on hover */
+}
+
+.header h4 {
+    margin-left: 80px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling the h1 and h3 element */
+h1, h3 {
+    font-size: 3rem;
+    color: #5c939a; /* Dark teal color for headings */
+    text-align: center;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Styling the h4 element */
+h4 {
+    font-size: 1.5rem;
+    color: #2e5c63;
+    text-align: left;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.login, .signUp {
+    flex: 1; /* This will make both divs take equal width */
+}
+
+form.login, form.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background for form */
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    z-index: 1;
+}
+
+/* Styling the input and select elements */
+input {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #a2d5d9; /* Light teal border */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #edf6f8; /* Light teal background */
+    color: #354f52; /* Dark teal text */
+    transition: all 0.3s ease;
+}
+
+/* Styling the button element */
+button {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: #5c939a; /* Dark teal color for buttons */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #2e5c63; /* Darker teal on hover */
+}
+
+/* Styling the p element */
+p {
+    font-size: 1rem;
+    color: #354f52; /* Dark teal text */
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/* Styling the a element */
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p.form-errors {
+    color: red;
+}
+
+p.form-success {
+    color: green;
+}
+
+/* Responsive design */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .login, .signUp {
+        flex: none;
+        width: 100%;
+    }
+    form.login, form.signup {
+        width: 90%;
+        margin: 2rem auto; /* add margin to forms */
+        margin-bottom: 20px; /* add margin bottom to forms */
+    }
+    input, button {
+        width: 90%;
+    }
+}
+  
+/* For screens smaller than 480px (mobiles) */
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+    .logout-button {
+        margin-right: 20px;
+    }
+    h1, h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    form.login, form.signup {
+        padding: 1rem;
+        margin: 1rem auto; /* adjust margin for smaller screens */
+        margin-bottom: 15px; /* adjust margin bottom for smaller screens */
+    }
+    input, button {
+        padding: 0.5rem;
+    }
+}
